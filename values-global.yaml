@@ -1,6 +1,6 @@
 ---
 global:
-  pattern: multicloud-gitops-rhods
+  pattern: multicloud-gitops-amx-rhoai
   options:
     useCSV: false
     syncPolicy: Automatic
