@@ -13,6 +13,12 @@ clusterGroup:
       namespace: open-cluster-management
       channel: release-2.9
       #csv: advanced-cluster-management.v2.6.1
+    ovms:
+      name: ovms-operator
+      namespace: openshift-operators
+      channel: alpha
+      source: certified-operators
+      sourceNamespace: openshift-marketplace
   projects:
     - hub
     - config-demo
