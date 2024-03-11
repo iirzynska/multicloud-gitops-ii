@@ -17,7 +17,7 @@ clusterGroup:
     rhods:
       name: rhods-operator
       namespace: redhat-ods-operator
-      managedNamespaces: ''
+      targetNamespaces: ""
       source: redhat-operators
       sourceNamespace: openshift-marketplace
       channel: stable
