@@ -5,6 +5,6 @@ metadata:
   namespace: redhat-ods-applications
 spec:
   auto_update_image: false
-  git_ref: main
-  git_uri: 'https://github.com/openvinotoolkit/openvino_notebooks'
+  git_ref: {{ .Values.ov.git_ref }}
+  git_uri: {{ .Values.ov.git_uri }}
   reconcile_duration_multiplier: 120

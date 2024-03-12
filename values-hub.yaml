@@ -7,12 +7,27 @@ clusterGroup:
     - golang-external-secrets
     - config-demo
     - hello-world
+    - redhat-ods-operator:
+        operatorGroup: true
+        targetNamespaces: ""
   subscriptions:
     acm:
       name: advanced-cluster-management
       namespace: open-cluster-management
       channel: release-2.9
       #csv: advanced-cluster-management.v2.6.1
+    rhods:
+      name: rhods-operator
+      namespace: redhat-ods-operator
+      source: redhat-operators
+      sourceNamespace: openshift-marketplace
+      channel: stable
+    ovms:
+      name: ovms-operator
+      namespace: openshift-operators
+      channel: alpha
+      source: certified-operators
+      sourceNamespace: openshift-marketplace
   projects:
     - hub
     - config-demo

@@ -1,2 +1,3 @@
 ov:
-  namespace: openshift-operators
+  git_ref: main
+  git_uri: 'https://github.com/openvinotoolkit/openvino_notebooks'
