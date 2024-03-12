@@ -8,6 +8,9 @@ clusterGroup:
     - config-demo
     - hello-world
     - redhat-ods-operator
+    - redhat-ods-operator:
+       operatorGroup: true
+       targetNamespaces:
   subscriptions:
     acm:
       name: advanced-cluster-management
@@ -17,7 +20,6 @@ clusterGroup:
     rhods:
       name: rhods-operator
       namespace: redhat-ods-operator
-      targetNamespaces: ""
       source: redhat-operators
       sourceNamespace: openshift-marketplace
       channel: stable
